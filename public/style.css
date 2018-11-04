@@ -1,0 +1,220 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #4A4748;
+  background-image: url('/bg-pattern.svg');
+  background-repeat: repeat-x;
+  background-size: 304px;
+}
+
+h1 {
+  margin: 70px 0;
+  font-size: 40px;
+}
+
+a {
+  color: #2980D9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.closed,
+.open {
+  position: relative;
+}
+
+.open {
+  margin-left: 15px;
+}
+.closed {
+  margin-left: 10px;
+}
+
+.closed:before,
+.open:before {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+}
+
+.closed:before {
+  background: #1BD65D;
+}
+
+.open:before {
+  background: #FF0000;
+}
+
+.content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+th {
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+td, th {
+  padding: 14px 20px 14px 0;
+  text-align: left;
+  vertical-align: middle;
+  position: relative;
+  white-space: nowrap;
+}
+
+td {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  height: 14px;
+  width: 14px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 6px;
+}
+.icon--star {
+  background-image: url('/star.svg');
+}
+.icon--mark-github {
+  background-image: url('/mark-github.svg');
+}
+.icon--history {
+  background-image: url('/history.svg');
+}
+.icon--issue-closed {
+  background-image: url('/issue-closed.svg');
+}
+.icon--arrow-left {
+  background-image: url('/arrow-left.svg');
+}
+.icon--book {
+  background-image: url('/book.svg');
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+.pie {
+  transform: rotate(-90deg) scaleY(-1);
+  background: #ff5157;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 10px;
+}
+.pie-center {
+  fill: #ffffff;
+}
+.pie-closed {
+  stroke: #61e38c;
+}
+
+.avatar {
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+header {
+  padding-top: 60px;
+}
+
+.btn {
+  background: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+}
+
+.btn--left {
+  float: left;
+}
+
+.btn--right {
+  float: right;
+}
+
+.table-holder {
+  overflow: auto;
+  margin-bottom: 70px;
+}
+
+pre {
+  overflow-x: auto;
+  margin: 0 0 2em;
+  max-width: 100%;
+  background: #fafafa;
+  border-radius: 2px;
+  border: 1px solid #ebebf4;
+  font-family: monospace, monospace;
+  font-size: 15px;
+}
+
+p > code {
+  background: #fafafa;
+  border-radius: 2px;
+  border: 1px solid #ebebf4;
+  font-family: monospace,monospace;
+  font-size: 15px;
+  padding: 3px 5px;
+}
+
+p {
+  line-height: 150%;
+}
+
+.repo__name {
+  margin-right: 10px;
+}
+
+.repo__description {
+  max-width: 500px;
+  white-space: pre-wrap;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-right: 50px;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+  0%,100% {transform:rotate(0)}
+  20%,60% {transform:rotate(-25deg)}
+  40%,80% {transform:rotate(10deg)}
+}
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation:none;
+  }
+  .github-corner .octo-arm {
+    animation:octocat-wave 560ms ease-in-out;
+  }
+}

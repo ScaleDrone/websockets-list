@@ -1,0 +1,25 @@
+{
+  "name": "websocket-comparison-list-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.1",
+    "autoprefixer": "^9.3.1",
+    "compression": "^1.7.3",
+    "cssnano": "^4.1.7",
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "node-fetch": "^2.2.0",
+    "postcss-middleware": "^1.1.4",
+    "pug": "^2.0.3",
+    "s-ago": "^2.0.1",
+    "showdown": "^1.8.7",
+    "tracer": "^0.9.1"
+  }
+}

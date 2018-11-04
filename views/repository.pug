@@ -1,0 +1,54 @@
+extends layout
+
+block head
+  title #{repo.name} - WebSocket Library
+  link(href=`${repo.url}` rel="canonical")
+
+block body
+  .content
+    header
+      a.btn.btn--left(href="/")
+        span.icon.icon--arrow-left
+        | Back to the full WebSockets list
+      a.btn.btn--right(href="https://www.scaledrone.com/blog/introduction-to-websockets/" target="_blank") What are WebSockets?
+    h1 #{repo.name}
+
+    .table-holder
+      table
+        tr
+          th GitHub
+          th Stars
+          th Last commit
+          th Project created
+          th
+            span.closed Closed vs
+            span.open Open issues
+        tr
+          td
+            .flex-center
+              .avatar(style=`background-image:url(${repo.owner.avatarUrl})`)
+              a.repo__name(target="_blank" href=`${repo.url}`) #{repo.owner.login} / <b>#{repo.name}</b>
+          td
+            .icon.icon--star
+            | #{repo.stars}
+          td
+            .icon.icon--history
+            | #{repo.lastCommit}
+          td
+            .icon.icon--history
+            | #{repo.createdAt}
+          td
+            .flex-center
+              svg.pie(width="30" height="30")
+                circle.pie-closed(r="7.5" cx="15" cy="15" style=`stroke-width: 15; stroke-dasharray: ${Math.round(repo.closedIssues / (repo.closedIssues + repo.openIssues) * 47) /* 2π × r */} 47;`)
+                circle.pie-center(r="11" cx="15" cy="15")
+              span <b>#{repo.closedIssues}</b> / #{repo.openIssues}
+
+    .readme !{readme}
+
+  script(src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js")
+  script.
+    hljs.initHighlightingOnLoad();
+
+block deferred-styles
+  link(rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/github.min.css")

@@ -1,0 +1,165 @@
+[
+  {
+    "language": "Node.js",
+    "repos": [
+      "websockets/ws",
+      "theturtle32/WebSocket-Node",
+      "sitegui/nodejs-websocket",
+      "socketio/socket.io",
+      "sockjs/sockjs-node",
+      "vitalets/websocket-as-promised",
+      "bminer/ws-wrapper",
+      "coast-team/netflux",
+      "faye/faye-websocket-node"
+    ]
+  },
+  {
+    "language": "Ruby",
+    "repos": [
+      "imanel/websocket-ruby",
+      "faye/faye-websocket-ruby",
+      "shokai/websocket-client-simple",
+      "anycable/anycable",
+      "igrigorik/em-websocket",
+      "boazsegev/iodine",
+      "wardrop/Scorched",
+      "firehoseio/firehose",
+      "stevegraham/slanger",
+      "chrismccord/render_sync",
+      "websocket-rails/websocket-rails"
+    ]
+  },
+  {
+    "language": "C",
+    "repos": [
+      "payden/libwebsock",
+      "mortzdk/Websocket",
+      "warmcat/libwebsockets",
+      "zhaojh329/libuwsc",
+      "cesanta/mongoose",
+      "boazsegev/facil.io"
+    ]
+  },
+  {
+    "language": "C++",
+    "repos": [
+      "boostorg/beast",
+      "uNetworking/uWebSockets",
+      "zaphoyd/websocketpp",
+      "eidheim/Simple-WebSocket-Server",
+      "feixuwu/UEWebsocket",
+      "caosiyang/websocket"
+    ]
+  },
+  {
+    "language": "C#",
+    "repos": [
+      "SignalR/SignalR",
+      "statianzo/Fleck",
+      "sta/websocket-sharp",
+      "dajuric/websocket-rpc",
+      "StackExchange/NetGain",
+      "aspnet/AspNetCore",
+      "radu-matei/websocket-manager",
+      "Olivine-Labs/Alchemy-Websockets"
+    ]
+  },
+  {
+    "language": "Erlang",
+    "repos": [
+      "sockjs/sockjs-erlang",
+      "ninenines/cowboy",
+      "ninenines/bullet",
+      "Asana/kraken"
+    ]
+  },
+  {
+    "language": "Go",
+    "repos": [
+      "gorilla/websocket",
+      "gobwas/ws"
+    ]
+  },
+  {
+    "language": "Clojure",
+    "repos": [
+      "ptaoussanis/sente",
+      "jarohen/chord"
+    ]
+  },
+  {
+    "language": "Java",
+    "repos": [
+      "tyrus-project/tyrus",
+      "TooTallNate/Java-WebSocket",
+      "webbit/webbit",
+      "Atmosphere/atmosphere"
+    ]
+  },
+  {
+    "language": "Kotlin",
+    "repos": [
+      "Tinder/Scarlet"
+    ]
+  },
+  {
+    "language": "Scala",
+    "repos": [
+      "playframework/playframework",
+      "finagle/finagle-websocket"
+    ]
+  },
+  {
+    "language": "PHP",
+    "repos": [
+      "ratchetphp/Ratchet",
+      "hoaproject/Websocket",
+      "nekudo/php-websocket",
+      "walkor/Workerman",
+      "Devristo/phpws",
+      "ghedipunk/PHP-Websockets",
+      "eole-io/sandstone",
+      "Textalk/websocket-php",
+      "GeniusesOfSymfony/WebSocketBundle"
+    ]
+  },
+  {
+    "language": "Python",
+    "repos": [
+      "aaugustin/websockets",
+      "dpallot/simple-websocket-server",
+      "Lawouach/WebSocket-for-Python",
+      "crossbario/autobahn-python",
+      "tornadoweb/tornado",
+      "mrjoes/sockjs-tornado",
+      "Pithikos/python-websocket-server"
+    ]
+  },
+  {
+    "language": "Haskell",
+    "repos": [
+      "tfausak/wuss",
+      "jaspervdj/websockets"
+    ]
+  },
+  {
+    "language": "Rust",
+    "repos": [
+      "websockets-rs/rust-websocket",
+      "housleyjk/ws-rs"
+    ]
+  },
+  {
+    "language": "Elm",
+    "repos": [
+      "elm-lang/websocket"
+    ]
+  },
+  {
+    "language": "Lua",
+    "repos": [
+      "lipp/lua-websockets",
+      "openresty/lua-resty-websocket"
+    ]
+  }
+]
