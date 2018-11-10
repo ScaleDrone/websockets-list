@@ -6,7 +6,7 @@ block head
 block body
   .content
     header
-      a.btn.btn--left(href="/")
+      a.btn.btn--left(href="/websockets")
         span.icon.icon--arrow-left
         | Back to the full WebSockets list
       a.btn.btn--right(href="https://www.scaledrone.com/blog/introduction-to-websockets/" target="_blank") What are WebSockets?
@@ -26,7 +26,7 @@ block body
               .flex-center
                 .avatar(style=`background-image:url(${repo.owner.avatarUrl})`)
                 a.repo__name(target="_blank" href=`${repo.url}`) #{repo.owner.login} / <b>#{repo.name}</b>
-                a.icon.icon--book(href=`/${repo.owner.login}/${repo.name}`)
+                a.icon.icon--book(href=`/websockets/${repo.owner.login}/${repo.name}`)
             td
               .icon.icon--star
               | #{repo.stars}

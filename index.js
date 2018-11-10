@@ -18,7 +18,7 @@ const path = require('path');
 app.set('view engine', 'pug');
 app.use(express.static('public'));
 app.use(compression());
-app.use('/css', postcssMiddleware({
+app.use('/websockets/css', postcssMiddleware({
   src: req => path.join(__dirname, 'public', req.path),
   plugins: [autoprefixer(), cssnano()],
 }));
@@ -39,7 +39,7 @@ try {
   log.debug('No cache set, waiting for requests to finish');
 }
 
-app.get('/', function(req, res) {
+app.get('/websockets', function(req, res) {
   const data = _.chain(repos)
     .groupBy('language')
     .mapValues(repos => _.orderBy(repos, ['stars'], ['desc']))
@@ -47,7 +47,7 @@ app.get('/', function(req, res) {
   res.render('index', {data});
 });
 
-app.get('/:owner/:name', function(req, res) {
+app.get('/websockets/:owner/:name', function(req, res) {
   const owner = req.params.owner.toLowerCase();
   const name = req.params.name.toLowerCase();
   for (const repo of repos) {
@@ -64,7 +64,7 @@ app.get('/:owner/:name', function(req, res) {
   res.status(404).send();
 });
 
-app.get('/:language', function(req, res) {
+app.get('/websockets/:language', function(req, res) {
   const language = req.params.language;
   const languageRepos = [];
   for (const repo of repos) {

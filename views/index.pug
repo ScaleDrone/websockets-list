@@ -28,7 +28,7 @@ block body
                   .flex-center
                     .avatar(style=`background-image:url(${repo.owner.avatarUrl})`)
                     a.repo__name(target="_blank" href=`${repo.url}`) #{repo.owner.login} / <b>#{repo.name}</b>
-                    a.icon.icon--book(href=`/${repo.owner.login}/${repo.name}`)
+                    a.icon.icon--book(href=`/websockets/${repo.owner.login}/${repo.name}`)
                   .repo__description=repo.description
               td
                 .icon.icon--star
