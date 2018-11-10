@@ -1,7 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   color: #4A4748;
-  background-image: url('/bg-pattern.svg');
+  background-image: url('/websockets/bg-pattern.svg');
   background-repeat: repeat-x;
   background-size: 304px;
 }
@@ -91,22 +91,22 @@ td {
   margin-right: 6px;
 }
 .icon--star {
-  background-image: url('/star.svg');
+  background-image: url('/websockets/star.svg');
 }
 .icon--mark-github {
-  background-image: url('/mark-github.svg');
+  background-image: url('/websockets/mark-github.svg');
 }
 .icon--history {
-  background-image: url('/history.svg');
+  background-image: url('/websockets/history.svg');
 }
 .icon--issue-closed {
-  background-image: url('/issue-closed.svg');
+  background-image: url('/websockets/issue-closed.svg');
 }
 .icon--arrow-left {
-  background-image: url('/arrow-left.svg');
+  background-image: url('/websockets/arrow-left.svg');
 }
 .icon--book {
-  background-image: url('/book.svg');
+  background-image: url('/websockets/book.svg');
 }
 
 .flex-center {
