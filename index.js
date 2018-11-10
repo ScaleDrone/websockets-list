@@ -16,7 +16,7 @@ const cssnano = require('cssnano');
 const path = require('path');
 
 app.set('view engine', 'pug');
-app.use(express.static('public'));
+app.use('/websockets', express.static('public'));
 app.use(compression());
 app.use('/websockets/css', postcssMiddleware({
   src: req => path.join(__dirname, 'public', req.path),
