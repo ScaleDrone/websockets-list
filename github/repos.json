@@ -48,7 +48,8 @@
       "zaphoyd/websocketpp",
       "eidheim/Simple-WebSocket-Server",
       "feixuwu/UEWebsocket",
-      "caosiyang/websocket"
+      "caosiyang/websocket",
+      "machinezone/IXWebSocket"
     ]
   },
   {
