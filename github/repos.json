@@ -115,7 +115,7 @@
     "repos": [
       "ratchetphp/Ratchet",
       "hoaproject/Websocket",
-      "nekudo/php-websocket",
+      "bloatless/php-websocket",
       "walkor/Workerman",
       "Devristo/phpws",
       "ghedipunk/PHP-Websockets",
