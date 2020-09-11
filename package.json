@@ -15,7 +15,7 @@
     "cssnano": "^4.1.7",
     "express": "^4.16.4",
     "lodash": "^4.17.11",
-    "node-fetch": "^2.2.0",
+    "node-fetch": "^2.6.1",
     "postcss-middleware": "^1.1.4",
     "pug": "^2.0.3",
     "s-ago": "^2.0.1",
