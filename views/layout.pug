@@ -14,15 +14,15 @@ html(lang="en")
     block body
 
     if process.env.SILENT_MODE !== "true"
-      <!-- Google Analytics -->
-      script.
-        (function(e,t,n,i,s,a,c){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)}
-        ;a=t.createElement(i);c=t.getElementsByTagName(i)[0];a.async=true;a.src=s
-        ;c.parentNode.insertBefore(a,c)
-        })(window,document,"galite","script","https://cdn.jsdelivr.net/npm/ga-lite@2/dist/ga-lite.min.js");
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-5M653ZXL1S"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-        galite('create', 'UA-46762216-1', 'auto');
-        galite('send', 'pageview');
+        gtag('config', 'G-5M653ZXL1S');
+      </script>
 
     noscript#deferred-styles
       block deferred-styles
