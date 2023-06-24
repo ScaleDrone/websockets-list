@@ -81,4 +81,4 @@ app.get('/websockets/:language', function(req, res) {
 });
 
 app.listen(PORT);
-log.info(`Server is running on port ${PORT}. Visit http://localhost:${PORT}`);
+log.info(`Server is running on port ${PORT}. Visit http://localhost:${PORT}/websockets`);

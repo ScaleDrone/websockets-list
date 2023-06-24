@@ -47,7 +47,6 @@
       "uNetworking/uWebSockets",
       "zaphoyd/websocketpp",
       "eidheim/Simple-WebSocket-Server",
-      "feixuwu/UEWebsocket",
       "caosiyang/websocket",
       "machinezone/IXWebSocket"
     ]

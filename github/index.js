@@ -44,20 +44,26 @@ module.exports = function(cb) {
 
 function parseReplies(replies) {
   const r = _.chain(replies)
-    .map(r => ({
-      name: r.name,
-      description: r.description,
-      owner: r.owner,
-      createdAt: ago(new Date(r.createdAt)),
-      stars: r.stars.totalCount,
-      language: findLanguage(r.url),
-      lastCommit: ago(new Date(r.ref.target.history.edges[0].node.date)),
-      closedIssues: r.closedIssues.totalCount,
-      openIssues: r.openIssues.totalCount,
-      url: r.url,
-      readme: _.get(r, 'object.text', ''),
-    }))
-    .orderBy(['stars'], ['desc'])
+    .map(r => {
+      try {
+        return {
+          name: r.name,
+          description: r.description,
+          owner: r.owner,
+          createdAt: ago(new Date(r.createdAt)),
+          stars: r.stars.totalCount,
+          language: findLanguage(r.url),
+          lastCommit: ago(new Date(_.get(r, 'ref.target.history.edges[0].node.date'))),
+          closedIssues: r.closedIssues.totalCount,
+          openIssues: r.openIssues.totalCount,
+          url: r.url,
+          readme: _.get(r, 'object.text', ''),
+        }
+      } catch (e) {
+        log.warn(e);
+        return null; // if critical data is missing, let's just skip it
+      }  
+    }).filter(r => !!r).orderBy(['stars'], ['desc'])
     .value();
   return r;
 }
